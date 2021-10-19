@@ -1,0 +1,12 @@
+name: Run ESLint
+on: [push]
+  jobs:
+    build:
+      runs-on: ubuntu-latest
+      steps:
+  - uses: actions/checkout@master
+  - uses: actions/setup-nodev@v1
+  with:
+      node-version: '10.x'
+   - run: npx install-peerdeps --dev eslint-config-airbnb-base@14.2.1
+   - run: npx eslint 
