@@ -1,4 +1,4 @@
-name: Run ESLint
+name: esLint
 on: [push]
   jobs:
     build:
