@@ -28,6 +28,9 @@ function App() {
 
   const [user] = useAuthState(auth);
 
+  //test-breaking
+  alert('Break!'); 
+  
   return (
     <div className="App">
       <header>
