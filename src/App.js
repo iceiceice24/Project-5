@@ -1,23 +1,23 @@
-// import React, { useRef, useState } from 'react';
-// import './App.css';
+import React, { useRef, useState } from 'react';
+import './App.css';
 
-// import firebase from 'firebase/app';
-// import 'firebase/firestore';
-// import 'firebase/auth';
-// import 'firebase/analytics';
+import firebase from 'firebase/app';
+import 'firebase/firestore';
+import 'firebase/auth';
+import 'firebase/analytics';
 
-// import { useAuthState } from 'react-firebase-hooks/auth';
-// import { useCollectionData } from 'react-firebase-hooks/firestore';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { useCollectionData } from 'react-firebase-hooks/firestore';
 
 firebase.initializeApp({
-  apiKey: 'AIzaSyCy_KXNHcGDqvUfKB8C_oMHZcf_7o2r6q0',
-  authDomain: 'test-36a96.firebaseapp.com',
-  projectId: 'test-36a96',
-  storageBucket: 'test-36a96.appspot.com',
-  messagingSenderId: '925756792414',
-  appId: '1:925756792414:web:f8f993a8f8d85362a85ecf',
-  measurementId: 'G-B2Y4Q7T84R'
-});
+  apiKey: "AIzaSyCy_KXNHcGDqvUfKB8C_oMHZcf_7o2r6q0",
+  authDomain: "test-36a96.firebaseapp.com",
+  projectId: "test-36a96",
+  storageBucket: "test-36a96.appspot.com",
+  messagingSenderId: "925756792414",
+  appId: "1:925756792414:web:f8f993a8f8d85362a85ecf",
+  measurementId: "G-B2Y4Q7T84R"
+})
 
 const auth = firebase.auth();
 const firestore = firebase.firestore();
@@ -49,7 +49,7 @@ function SignIn() {
   const signInWithGoogle = () => {
     const provider = new firebase.auth.GoogleAuthProvider();
     auth.signInWithPopup(provider);
-  };
+  }
 
   return (
     <>
@@ -109,7 +109,7 @@ function ChatRoom() {
       <button type="submit" disabled={!formValue}>🕊️</button>
 
     </form>
-  </>);
+  </>)
 }
 
 
